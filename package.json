@@ -1,0 +1,48 @@
+{
+  "name": "oagts",
+  "version": "1.0.0",
+  "description": "openApi generate typescript，openApi生成对应的ts定义文件",
+  "main": "dist/index.js",
+  "bin": {
+    "oagts": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elylon1101/oagts.git"
+  },
+  "keywords": [
+    "openApi生成对应的ts定义文件",
+    "openApi",
+    "typescript",
+    "generate"
+  ],
+  "author": "elylon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elylon1101/oagts/issues"
+  },
+  "homepage": "https://github.com/elylon1101/oagts#readme",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "json5": "^2.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.15.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,2 @@
+# oagts
+openApi generate ts
