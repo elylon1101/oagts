@@ -1,5 +1,6 @@
 import { existsSync, mkdirSync, writeFileSync } from "fs";
 import { parse } from "path";
+import { convertType } from "../util/typeConvert";
 
 export function genReqAndRes(apiConfig: any, output: string, indents: string) {
     let dts: string = "";
@@ -16,7 +17,7 @@ export function genReqAndRes(apiConfig: any, output: string, indents: string) {
             if (dto.properties[key].description) {
                 dsc = `${indents}/**\n${indents} * ${dto.properties[key].description}\n${indents} */\n`;
             }
-            return `${dsc}${indents}${key}${dto.required?.includes(key) ? "" : "?"}: ${dto.properties[key].type};\n`;
+            return `${dsc}${indents}${key}${dto.required?.includes(key) ? "" : "?"}: ${convertType(dto.properties[key].type)};\n`;
         }).join("") : "";
         dts += "}\n\n";
     });
