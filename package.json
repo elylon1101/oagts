@@ -10,8 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
-    "test": "ts-node src/index.ts gen -u https://w.mcfish.cn:30443/api/v3/api-docs"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
