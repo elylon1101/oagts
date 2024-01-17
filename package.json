@@ -1,6 +1,6 @@
 {
   "name": "oagts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "openApi generate typescript，openApi生成对应的ts定义文件",
   "main": "dist/index.js",
   "bin": {
